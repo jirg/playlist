@@ -9,5 +9,6 @@
             = f.text_field :song
           %fieldset.actions.form-group
             .col-sm-6.col-md-offset-3
+              = f.submit(@entry.new_record? ? 'Add Song' : 'Update Song', class: 'btn btn-default center-block')
+-#
               %input(type="submit" value="Add Song" class="btn btn-default center-block")
-              

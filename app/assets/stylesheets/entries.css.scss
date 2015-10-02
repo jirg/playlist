@@ -1,6 +1,15 @@
+.navbar-nav {
+  width: 90%;
+  text-align: center;
+  li {
+    float: none;
+    display: inline-block;
+  }
+}
+
 header {
   text-align: center;
-  font-size: 72px;
+  font-size: 64px;
 }
 
 a {
@@ -10,10 +19,7 @@ a {
   margin: auto;
 }
 
-.list {
-
-
-  p {
-    margin-top: 40px;
-  }
+.table {
+  margin-left: 10%;
+  margin-right: auto;
 }

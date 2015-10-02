@@ -1,9 +1,10 @@
 class EntriesController < InheritedResources::Base
-  actions :new, :show, :index, :create
+  actions :new, :show, :index, :edit, :update
+  before_filter :set_message, :only => [:update]
 
-  def index
-    @entries = Entry.all
-  end
+  # def index
+  #   @entries = Entry.all
+  # end
 
 
   def create
@@ -20,5 +21,9 @@ class EntriesController < InheritedResources::Base
   private
   def entry_params
     params.require(:entry).permit(:artist, :album, :song)
+  end
+
+  def set_message
+    flash[:warning] = "Are you sure you want to overwrite this song information?"
   end
 end

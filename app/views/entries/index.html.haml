@@ -1,16 +1,20 @@
 %header Playlist
-=link_to "Add Music To Your Playlist", new_entry_path
-%br
-  %container
-    %table
-      %table-responsive
-        %tbody
+%nav.navbar.navbar-default
+  %ul.nav.navbar-nav
+    %li
+      =link_to "Add Music To Your Playlist", new_entry_path
+    %li
+      %a{href: "#"} Download Playlist to File
+%container
+  %table.table
+    %table-responsive
+      %tbody
+        %tr
+          %td.h2 Song
+          %td.h2 Artist
+          %td.h2 Album
+        - @entries.each do |entry|
           %tr
-            %td.h2 Song
-            %td.h2 Artist
-            %td.h2 Album
-          - @entries.each do |entry|
-            %tr
-              %td= entry.song
-              %td= entry.artist
-              %td= entry.album
+            %td= entry.song
+            %td= entry.artist
+            %td= entry.album
