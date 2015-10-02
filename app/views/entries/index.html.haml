@@ -1,9 +1,16 @@
 %header Playlist
 =link_to "Add Music To Your Playlist", new_entry_path
 %br
-%container
-  %article
-    - @entries.each do |entry|
-      %well.col-md-8
-        %p= entry.song
-        %br
+  %container
+    %table
+      %table-responsive
+        %tbody
+          %tr
+            %td.h2 Song
+            %td.h2 Artist
+            %td.h2 Album
+          - @entries.each do |entry|
+            %tr
+              %td= entry.song
+              %td= entry.artist
+              %td= entry.album

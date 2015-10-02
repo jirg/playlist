@@ -1,28 +1,22 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Code Challenge:
 
-Things you may want to cover:
+Write a Ruby application that creates a playlist from user input, publishing the output to a local file.
 
-* Ruby version
+Requirements
+1. Read input for artist, album and song name
+2. Allow the user to indicate that no more data will be entered
+3. Songs will not be duplicated in a playlist
+4. Publish to a file as indicated by the user
+5. Warn the user if a file is to be overwritten
+6. Output the results to the screen
+7. (BONUS) Create a Vagrantfile or Dockerfile for the application to run inside of.
 
-* System dependencies
+Treat your solution as though it will be a production application.  You may take whatever liberties you desire in formatting the output.
 
-* Configuration
+Example output
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+-Playlist-
+The Eagles - Hotel California - Hotel California
+Some Group - Some Album - Some Song

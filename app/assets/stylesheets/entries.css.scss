@@ -4,10 +4,16 @@ header {
 }
 
 a {
+  display: inline-block;
   text-align: center;
-  font-size: 36px;
+  font-size: 28px;
+  margin: auto;
 }
 
-p {
-  margin-top: auto;
+.list {
+
+
+  p {
+    margin-top: 40px;
+  }
 }
