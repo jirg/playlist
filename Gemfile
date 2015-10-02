@@ -1,0 +1,10 @@
+source 'https://rubygems.org'
+
+gem 'rails', '4.1.1'
+gem 'sqlite3'
+gem 'haml-rails'
+gem 'jquery-rails'
+gem 'inherited_resources'
+gem 'turbolinks'
+gem 'bootstrap_form'
+gem 'bootstrap-sass'
