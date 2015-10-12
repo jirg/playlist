@@ -1,9 +1,11 @@
-.navbar-nav {
+%well {
   width: 90%;
   text-align: center;
-  li {
+  a{
     float: none;
     display: inline-block;
+    margin: 25%;
+    // padding: 25%;
   }
 }
 

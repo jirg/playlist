@@ -1,10 +1,7 @@
 %header Playlist
-%nav.navbar.navbar-default
-  %ul.nav.navbar-nav
-    %li
-      =link_to "Add Music To Your Playlist", new_entry_path
-    %li
-      %a{href: "#"} Download Playlist to File
+%row
+  =button_to "Add Music To Your Playlist", new_entry_path
+  =button_to "Download Playlist to File", index_download_path
 %container
   %table.table
     %table-responsive
